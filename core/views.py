@@ -13,5 +13,5 @@ def home(request):
             # sender = form.cleaned_data['email']
             send_mail(f'{subject} Portfolio Contact', message, 'ashutoshacharya24@gmail.com',
                       ['ashutoshacharya24@gmail.com'],
-                      fail_silently=False)
+                      fail_silently=True)
     return render(request, 'home.html')
